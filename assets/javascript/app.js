@@ -63,87 +63,88 @@ function showResults(){}
         {
         question: "Which Jane Austen Novel had a charcter named Mr. Darcy?",
         answers: {
-        a. "Sense and Sensibility",
-        b. "Emma",
-        c. "Pride and Prejidice",
-        d. "Persusion",
+        a: "Sense and Sensibility",
+        b: "Emma",
+        c: "Pride and Prejidice",
+        d: "Persusion",
         },
-        correct answer: "c"
+        "correct answer" : "c"
     },
     {
         question: "Mark Twains real name was?",
         answers: {
-        a. "Adam Clark",
-        b. "John Birch",
-        c. "Samuel Clemins",
-        d. "Andrew Roberts",
+        a: "Adam Clark",
+        b: "John Birch",
+        c: "Samuel Clemins",
+        d: "Andrew Roberts",
         },
-        correct answer : "c"
+        "correct answer" : "c"
     },
     {
 
         question: "What was Stephen Kings first published novel?",
         answers: {
-        a. "Carrie",
-        b. "I.T.",
-        c. "The Green Mile",
-        d. "Under The Dome",
+        a: "Carrie",
+        b: "I.T.",
+        c: "The Green Mile",
+        d: "Under The Dome",
         },
-        correct answer : "a"
+        "correct answer" : "a"
     },
     {
 
     question: "In The Percy Jackson and the Olypians, Percy was the son of which Greek God?",
         answers:{
-        a. "Posidon",
-        b. "Zeus",
-        c. "Hermes",
-        d. "Aries",
+        a: "Posidon",
+        b: "Zeus",
+        c: "Hermes",
+        d: "Aries",
         },
-        correct answer: "a"
+        "correct answer" : "a"
     },
     {
 
         question: "H.G. Wells wrote primarily in what genre?",
         answers: {
-        a. "Fantasy",
-        b. "Horror",
-        c. "Science Ficion",
-        d. "Mystery",
+        a: "Fantasy",
+        b: "Horror",
+        c: "Science Ficion",
+        d: "Mystery",
         },
-        correct answer: "c"
+        "correct answer" : "c"
     },
     {
 
         question: "Which of Shakespears plays has a fairy named Puck?",
         answers: {
-        a. "The Tempest",
-        b. "Romeo and Juliet",
-        c. "Othello",
-        d. "A Midsummer Nights Dream",
+        a: "The Tempest",
+        b: "Romeo and Juliet",
+        c: "Othello",
+        d: "A Midsummer Nights Dream",
         },
-        correct answer: "d"
+        "correct answer" : "d"
     },
     {
 
-        question: "Beatrix Potter wrote and illustrated what popular childrens books?"
-        a. "The Tales of Peter Rabbit",
-        b. "Whinnie The Pooh",
-        c. "If You Give a Mouse a Cookie",
-        d. "The Veleteen Rabbit",
+        question: "Beatrix Potter wrote and illustrated what popular childrens books?",
+        answers: {
+        a: "The Tales of Peter Rabbit",
+        b: "Whinnie The Pooh",
+        c: "If You Give a Mouse a Cookie",
+        d: "The Veleteen Rabbit",
         },
-        correct answer: "a"
-    },
+        "correct answer" : "a"
     },
     {
 
-        question: "Nathaniel Hawthorne wrote this novel?"
-        a. "The Grapes of Wrath",
-        b. "The Great Gatsby",
-        c. "The Scarlett Letter",
-        d. "Moby Dick",
+        question: "Nathaniel Hawthorne wrote this novel?",
+        answers: {
+        a: "The Grapes of Wrath",
+        b: "The Great Gatsby",
+        c: "The Scarlett Letter",
+        d: "Moby Dick",
         },
-        correct answer: "c"
+        "correct answer" : "c"
     },
 
     ];
