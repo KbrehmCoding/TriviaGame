@@ -68,7 +68,7 @@ function showResults(){}
         c: "Pride and Prejidice",
         d: "Persusion",
         },
-        "correct answer" : "c"
+        correctAnswer : "c"
     },
     {
         question: "Mark Twains real name was?",
@@ -78,7 +78,7 @@ function showResults(){}
         c: "Samuel Clemins",
         d: "Andrew Roberts",
         },
-        "correct answer" : "c"
+        correctAnswer : "c"
     },
     {
 
@@ -89,7 +89,7 @@ function showResults(){}
         c: "The Green Mile",
         d: "Under The Dome",
         },
-        "correct answer" : "a"
+        correctAnswer : "a"
     },
     {
 
@@ -100,7 +100,7 @@ function showResults(){}
         c: "Hermes",
         d: "Aries",
         },
-        "correct answer" : "a"
+        correctAnswer : "a"
     },
     {
 
@@ -111,7 +111,7 @@ function showResults(){}
         c: "Science Ficion",
         d: "Mystery",
         },
-        "correct answer" : "c"
+        correctAnswer : "c"
     },
     {
 
@@ -122,7 +122,7 @@ function showResults(){}
         c: "Othello",
         d: "A Midsummer Nights Dream",
         },
-        "correct answer" : "d"
+        correctAnswer : "d"
     },
     {
 
@@ -133,7 +133,7 @@ function showResults(){}
         c: "If You Give a Mouse a Cookie",
         d: "The Veleteen Rabbit",
         },
-        "correct answer" : "a"
+        correctAnswer : "a"
     },
     {
 
@@ -144,7 +144,7 @@ function showResults(){}
         c: "The Scarlett Letter",
         d: "Moby Dick",
         },
-        "correct answer" : "c"
+        correctAnswer : "c"
     },
 
     ];
@@ -153,3 +153,27 @@ function showResults(){}
 
     submitButton.addEventListener("click", showResults);
 })();
+
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 8,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
