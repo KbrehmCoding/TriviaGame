@@ -1,3 +1,4 @@
+//shows a numerical value for how many were correct
 function showResults(){}
 (function() {
     function buildQuiz() {
@@ -26,7 +27,7 @@ function showResults(){}
 
         quizContainer.innerHTML = output.join("");
     }
-
+    //shows results by changing the color of text based on which ones are right  or wrong
     function showResults() {
 
         const answerContainers = quizContainer.querySelectorAll(".answers");
@@ -55,7 +56,7 @@ function showResults(){}
 
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
-
+    //data for questions and answers
     const quizContainer = document.getElementById("quiz");
     const resultsContainer = document.getElementById("results");
     const submitButton = document.getElementById("submit");
@@ -154,7 +155,7 @@ function showResults(){}
     submitButton.addEventListener("click", showResults);
 })();
 
-
+//timer code
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -173,7 +174,9 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    var fiveMinutes = 60 * 8,
+    var fiveMinutes = 60 * 4,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
+
+$("#submit").on("click", timer.stop);
