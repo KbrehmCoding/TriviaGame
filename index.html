@@ -1,14 +1,20 @@
 <html>
 <head>
     <title>multiple-choice quiz form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
     <h3>Literary Trivia</h3>
-    <div>Time Remaining   <span id="time">03:00</div>
-    <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
-    <div id="results"></div>
+    <div id="startContainer">
+        <button id="startButton">Start Quiz</button>
+    </div>
+    <div id="quizContainer">
+        <div>Time Remaining <span id="time">03:00</div>
+        <div id="questionsContainer"></div>
+        <button id="submitButton">Submit Quiz</button>
+        <div id="resultsContainer"></div>
+    </div>
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
