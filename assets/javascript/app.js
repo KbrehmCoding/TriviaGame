@@ -112,6 +112,7 @@ function buildQuiz() {
 function showResults() {
     const answerContainers = $("#questionsContainer .answers");
     let numCorrect = 0;
+    let numWrong = 0;
 
     myQuestions.forEach((currentQuestion, questionNumber) => {
         const answerContainer = $(answerContainers[questionNumber]);
@@ -120,6 +121,7 @@ function showResults() {
             numCorrect++;
             answerContainer.css("color", "lightgreen");
         } else {
+            numWrong++;
             answerContainer.css("color", "red");
         }
     });

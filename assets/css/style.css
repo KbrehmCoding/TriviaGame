@@ -1,3 +1,43 @@
+body {
+    background-image: url("../images/800px_COLOURBOX28791466.jpg");
+    margin: 0;
+}
+
+.contentContainer {
+    background-color: green;
+    height: 500px;
+    margin: auto;
+    width: 900px;
+}
+
+#startButton {
+    Height: 30px;
+    margin-left: 350px;
+    margin-top: 200px;
+    width: 200px;
+
+}
+
+#submitButton {
+    margin-left: 400px;
+}
+
+.titleContainer{
+    color: white;
+    background-color: green;
+    font-size: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 800px;
+}
+
+#resultsContainer,
+#timerContainer,
+#questionsContainer {
+    text-align: center;
+}
+
 #quizContainer {
     display: none;
 }
