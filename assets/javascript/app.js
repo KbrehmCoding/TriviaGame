@@ -16,7 +16,7 @@ const myQuestions = [
         answers: {
             a: "Adam Clark",
             b: "John Birch",
-            c: "Samuel Clemins",
+            c: "Samuel Clemens",
             d: "Andrew Roberts",
         },
         correctAnswer: "c"
