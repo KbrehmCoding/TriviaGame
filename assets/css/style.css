@@ -3,39 +3,52 @@ body {
     margin: 0;
 }
 
-.contentContainer {
+#contentContainer {
     background-color: green;
-    height: 500px;
-    margin: auto;
+    color: white;
+    margin: 80px auto;
+    padding: 30px 80px 80px;
+    text-align: center;
     width: 900px;
 }
 
-#startButton {
-    Height: 30px;
-    margin-left: 350px;
-    margin-top: 200px;
-    width: 200px;
+#startButton,
+#submitButton {
+    background-color: white;
+    border: 2px solid black;
+    color: green;
+    cursor: pointer;
+    font-size: 36px;
+    height: 100px;
+    width: 400px;
+}
 
+#startButton {
+    margin-top: 100px;
 }
 
 #submitButton {
-    margin-left: 400px;
+    margin-bottom: 20px;
+    margin-top: 80px;
 }
 
-.titleContainer{
-    color: white;
-    background-color: green;
-    font-size: 50px;
-    margin: auto;
-    margin-bottom: 30px;
-    text-align: center;
-    width: 800px;
+#timerContainer {
+    font-size: 30px;
+}
+
+#titleContainer {
+    font-size: 60px;
 }
 
 #resultsContainer,
 #timerContainer,
 #questionsContainer {
-    text-align: center;
+    line-height: 30px;
+}
+
+.question {
+    font-size: 30px;
+    padding: 40px 10px 10px 10px;
 }
 
 #quizContainer {

@@ -111,22 +111,30 @@ function buildQuiz() {
 // changes the color of text based on which ones are right or wrong
 function showResults() {
     const answerContainers = $("#questionsContainer .answers");
-    let numCorrect = 0;
-    let numWrong = 0;
+    let numberCorrect = 0;
+    let numberWrong = 0;
+    let numberUnanswered = 0;
 
     myQuestions.forEach((currentQuestion, questionNumber) => {
         const answerContainer = $(answerContainers[questionNumber]);
         const userAnswer = ($(answerContainer).find(`input[name=question${questionNumber}]:checked`)[0] || {}).value;
-        if (userAnswer === currentQuestion.correctAnswer) {
-            numCorrect++;
+        if (!userAnswer) {
+            numberUnanswered++;
+            answerContainer.css("color", "red");
+        } else if (userAnswer === currentQuestion.correctAnswer) {
+            numberCorrect++;
             answerContainer.css("color", "lightgreen");
         } else {
-            numWrong++;
+            numberWrong++;
             answerContainer.css("color", "red");
         }
     });
 
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    $("#resultsContainer").html(`
+        <div>${numberCorrect} correct</div>
+        <div>${numberWrong} incorrect</div>
+        <div>${numberUnanswered} unanswered</div>
+    `);
 }
 
 function startTimer(duration, display) {
@@ -141,7 +149,8 @@ function startTimer(duration, display) {
         display.text(`${minutes}:${seconds}`);
 
         if (--timer < 0) {
-            timer = duration;
+            stopTimer();
+            showResults();
         }
     }, 1000);
 }
@@ -153,7 +162,7 @@ function stopTimer() {
 $(document).ready(() => {
     $("#startButton").on("click", () => {
         $("#startContainer, #quizContainer").toggle();
-        const timerDuration = 60 * 3; // three minutes
+        const timerDuration = 60 * 2; // two minutes
         const display = $("#time");
         startTimer(timerDuration, display);
         buildQuiz();
